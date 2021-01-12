@@ -554,6 +554,7 @@ p {
     height: 120px;
     align-items: center;
     padding-left: 50px !important;
+    max-width: 1317px;
   }
   .desktop-navlinks li {
     position: relative;
