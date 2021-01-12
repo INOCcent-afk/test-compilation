@@ -215,13 +215,13 @@ p {
 
 /* contact us */
 .contact-us-popout {
-  width: 280px;
+  width: 250px;
   background: #11181f;
   position: absolute;
   top: 0;
   right: -250px;
   flex-direction: column;
-  padding: 40px 20px 20px 20px;
+  padding: 24px 20px 20px 20px;
   display: none;
   z-index: 2000;
   max-height: 100vh;
@@ -230,12 +230,12 @@ p {
 }
 
 .contact-us-closeBtn {
-  width: 50px;
+  width: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 50px;
+  min-height: 30px;
   align-self: flex-end;
   cursor: pointer;
 }
@@ -266,8 +266,12 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  height: 100px;
+  gap: 20px;
+  height: 50px;
+}
+.newzealand-title {
+  height: 70px;
+  margin: 56px 0 23px 0;
 }
 .australia-title h1,
 .newzealand-title h1 {
@@ -338,7 +342,7 @@ p {
 
 /* MENU */
 .menu-popout {
-  width: 280px;
+  width: 250px;
   position: absolute;
   background: #11181f;
   top: 0;
@@ -531,6 +535,7 @@ p {
   .contactPopOutClass {
     display: flex !important;
     right: 0 !important;
+    padding-left: 40px !important;
   }
   .navlogo {
     gap: 20px;
@@ -726,6 +731,7 @@ p {
   }
   .australia-title {
     grid-area: a;
+    height: 70px;
   }
   .newzealand-title {
     grid-area: a;
