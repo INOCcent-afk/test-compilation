@@ -66,7 +66,6 @@ contactCloseBtn.addEventListener("click", () => {
     navigation.classList.remove("navigationDeskClass");
     navigation.style.pointerEvents = "all";
     contactPopOut.style.display = "none";
-    
   } else {
     contactPopOut.style.right = "-280px";
     contactPopOut.style.display = "none";
@@ -74,7 +73,7 @@ contactCloseBtn.addEventListener("click", () => {
     navigation.style.pointerEvents = "all";
   }
   document.body.style.overflow = "auto";
-   navigationContainer.style.display = "none";
+  navigationContainer.style.display = "none";
 });
 
 applicationDropdown.addEventListener("click", () => {
@@ -103,7 +102,7 @@ desktopContactBtn.addEventListener("click", () => {
     navigation.classList.add("navigationDeskClass");
     navigation.style.pointerEvents = "none";
     document.body.style.overflow = "hidden";
-     navigationContainer.style.display = "block";
+    navigationContainer.style.display = "block";
   } else {
     window.scrollTo(0, 0);
   }

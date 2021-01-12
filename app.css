@@ -407,8 +407,13 @@ p {
   cursor: pointer;
   transition: all 0.4s ease;
 }
+
 .application-mobile-links li {
   transition: all 0.4s ease;
+  border-left: 6px solid #4a25aa;
+}
+.application-mobile-links li:nth-child(1) {
+  border-left: none;
 }
 .application-mobile-links li:nth-child(2) {
   border-left: 6px solid #ffc600;
@@ -469,18 +474,21 @@ p {
 }
 
 .applicationHideDropdown {
-  max-height: 480px;
+  min-height: 480px;
+  max-height: none;
 }
 .dropdownsBorderLi {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
 .productsHideDropdown {
-  max-height: 180px;
+  min-height: 180px;
+  max-height: none;
 }
 
 .aboutHideDropdown {
-  max-height: 420px;
+  min-height: 420px;
+  max-height: none;
 }
 .desktop-navlinks {
   display: none;
@@ -491,6 +499,15 @@ p {
 @media (min-width: 768px) {
   .navigation {
     padding-left: 25px;
+    height: 90px;
+  }
+  .navright-side {
+    width: 180px;
+  }
+  .tel,
+  .menu {
+    height: 90px;
+    width: 90px;
   }
 }
 
@@ -521,11 +538,6 @@ p {
   }
   .navlogo img {
     width: unset;
-  }
-
-  .vector-letters {
-    height: unset;
-    color: #fff;
   }
   .navlogo p {
     font-size: 15px;
