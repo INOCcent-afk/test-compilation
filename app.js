@@ -23,7 +23,7 @@ const productsDropdownLinks = document.querySelectorAll(
 const aboutDropdown = document.querySelector(".about-mobile-links");
 const aboutDropdownLinks = document.querySelectorAll(".about-mobile-links li");
 const desktopContactBtn = document.querySelector(".desktop-nav-contact-us");
-
+const navigationContainer = document.querySelector(".navigation-container");
 telBtn.addEventListener("click", () => {
   if (window.scrollY == 0) {
     contactPopOut.style.right = "0px";
@@ -32,6 +32,7 @@ telBtn.addEventListener("click", () => {
     navigation.style.pointerEvents = "none";
     navigation.classList.remove("contactPopOutClassMobile");
     document.body.style.overflow = "hidden";
+    navigationContainer.style.display = "block";
   } else {
     window.scrollTo(0, 0);
   }
@@ -45,6 +46,7 @@ menu.addEventListener("click", () => {
     navigation.style.pointerEvents = "none";
     navigation.classList.remove("contactPopOutClassMobile");
     document.body.style.overflow = "hidden";
+    navigationContainer.style.display = "block";
   } else {
     window.scrollTo(0, 0);
   }
@@ -55,6 +57,7 @@ menuCloseBtn.addEventListener("click", () => {
   navigation.classList.add("contactPopOutClassMobile");
   navigation.style.pointerEvents = "all";
   document.body.style.overflow = "auto";
+  navigationContainer.style.display = "none";
 });
 
 contactCloseBtn.addEventListener("click", () => {
@@ -63,6 +66,7 @@ contactCloseBtn.addEventListener("click", () => {
     navigation.classList.remove("navigationDeskClass");
     navigation.style.pointerEvents = "all";
     contactPopOut.style.display = "none";
+    
   } else {
     contactPopOut.style.right = "-280px";
     contactPopOut.style.display = "none";
@@ -70,6 +74,7 @@ contactCloseBtn.addEventListener("click", () => {
     navigation.style.pointerEvents = "all";
   }
   document.body.style.overflow = "auto";
+   navigationContainer.style.display = "none";
 });
 
 applicationDropdown.addEventListener("click", () => {
@@ -98,6 +103,7 @@ desktopContactBtn.addEventListener("click", () => {
     navigation.classList.add("navigationDeskClass");
     navigation.style.pointerEvents = "none";
     document.body.style.overflow = "hidden";
+     navigationContainer.style.display = "block";
   } else {
     window.scrollTo(0, 0);
   }
